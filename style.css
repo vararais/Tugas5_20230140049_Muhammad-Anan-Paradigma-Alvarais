@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+center {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 5px;
+    color: #ffffff;
+}
+
+#judul {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #f04d4d;
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+}
+
+table tr:first-child {
+    background: linear-gradient(90deg, #1a1a1a, #2a2a2a) !important;
+}
+
+p#jdl {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #f04d4d;
+    padding: 10px 0;
+}
+
+td {
+    border-bottom: 1px solid #333;
+    vertical-align: middle;
+}
+
+td:first-child {
+    width: 220px;
+    text-align: center;
+    padding: 15px;
+}
+
+tr:hover {
+    background-color: #1a1a1a;
+}
+
+tr:nth-child(even) {
+    background-color: #1d1d1d;
+}
+
+tr:nth-child(even):hover {
+    background-color: #2a2a2a;
+}
+
+img {
+    width: 180px !important;
+    height: 180px !important;
+    object-fit: contain;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #ffffff;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+td:nth-child(2) {
+    padding: 20px;
+}
+
+p#member {
+    display: inline-block;
+    color: #f04d4d;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+p#mnama {
+    display: inline-block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+p#mposisi, p#mtgl {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+/* Fix for the second table headers */
+tr:first-child td p#jdl {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: #f04d4d;
+}
+
+/* Add badges for brands */
+td:nth-child(2)::after {
+    content: "";
+    display: block;
+    margin-top: 15px;
+}
+
+tr:nth-child(2) td:nth-child(2)::after {
+    content: "SKATE CULTURE";
+    background-color: #f04d4d;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+tr:nth-child(3) td:nth-child(2)::after {
+    content: "JAPANESE DENIM";
+    background-color: #f04d4d;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+tr:nth-child(4) td:nth-child(2)::after {
+    content: "STREET ART";
+    background-color: #f04d4d;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+/* Second table styles */
+table:nth-of-type(2) tr:nth-child(2) td:nth-child(2)::after {
+    content: "WORKWEAR";
+}
+
+table:nth-of-type(2) tr:nth-child(3) td:nth-child(2)::after {
+    content: "SURF CULTURE";
+}
+
+table:nth-of-type(2) tr:nth-child(4) td:nth-child(2)::after {
+    content: "LUXURY STREETWEAR";
+}
+
+/* Add a footer using pseudo-element for center */
+center:last-child::after {
+    content: "© 2025 STREETWEAR CULTURE";
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Fix the header text in second table */
+table:nth-of-type(2) tr:first-child td:first-child p#jdl {
+    content: "Brand Logo";
+}
+
+table:nth-of-type(2) tr:first-child td:nth-child(2) p#jdl {
+    content: "Description";
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    p#jdl {
+        font-size: 1.2rem;
+    }
+    
+    td:first-child {
+        width: 150px;
+    }
+    
+    img {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    
+    p#mnama {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    td:first-child {
+        width: 100px;
+    }
+    
+    img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    
+    p#mnama {
+        font-size: 1.2rem;
+    }
+}
